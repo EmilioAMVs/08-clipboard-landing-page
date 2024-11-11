@@ -1,0 +1,170 @@
+/*Primary colors*/
+/*Neutral colors*/
+/*main font*/
+/*main font*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/*header*/
+.header {
+  background-image: url(../../images/bg-header-desktop.png);
+  margin-bottom: 4%;
+}
+.header .logo {
+  margin: 3% 0;
+}
+.header h1 {
+  color: hsl(210, 10%, 33%);
+}
+.header p {
+  color: hsl(201, 11%, 66%);
+}
+.header button {
+  padding: 1%;
+  border-radius: 30px;
+}
+.header button:nth-child(1) {
+  margin-right: 2%;
+  box-shadow: 8px 8px 10px rgba(38, 186, 164, 0.75);
+  -webkit-box-shadow: 8px 8px 10px rgba(38, 186, 164, 0.75);
+  -moz-box-shadow: 8px 8px 10px rgba(38, 186, 164, 0.75);
+}
+.header button:nth-child(2) {
+  box-shadow: 8px 8px 10px rgba(0, 123, 255, 0.75);
+  -webkit-box-shadow: 8px 8px 10px rgba(0, 123, 255, 0.75);
+  -moz-box-shadow: 8px 8px 10px rgba(0, 123, 255, 0.75);
+}
+
+/*track*/
+.track h2 {
+  color: hsl(210, 10%, 33%);
+}
+.track p {
+  color: hsl(201, 11%, 66%);
+}
+
+/*mainContent*/
+.mainContent {
+  margin: 5%;
+}
+.mainContent img {
+  margin-bottom: 10%;
+}
+.mainContent h5 {
+  color: hsl(210, 10%, 33%);
+}
+.mainContent p {
+  color: hsl(201, 11%, 66%);
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 991px) {
+  .mainContent h5, .mainContent p {
+    text-align: center;
+  }
+}
+/*access*/
+.access {
+  margin-bottom: 5%;
+}
+.access h2 {
+  color: hsl(210, 10%, 33%);
+  margin: 5% 0 0 0;
+}
+.access p {
+  color: hsl(201, 11%, 66%);
+  margin: 2% 0 5% 0;
+}
+.access img {
+  box-shadow: 5px 5px 20px rgba(76, 84, 93, 0.75);
+  -webkit-box-shadow: 5px 5px 20px rgba(76, 84, 93, 0.75);
+  -moz-box-shadow: 5px 5px 20px rgba(76, 84, 93, 0.75);
+}
+
+/*workFlow*/
+.workFlow {
+  margin-bottom: 5%;
+}
+.workFlow h2 {
+  color: hsl(210, 10%, 33%);
+}
+.workFlow p {
+  color: hsl(201, 11%, 66%);
+  margin: 2% 0 5% 0;
+}
+.workFlow img {
+  margin-bottom: 3%;
+}
+
+/*sponsor*/
+.sponsor {
+  margin: 3% 0 10% 0;
+}
+
+/*clipboard*/
+.clipboard {
+  margin-bottom: 10%;
+}
+.clipboard h4 {
+  color: hsl(210, 10%, 33%);
+}
+.clipboard p {
+  color: hsl(201, 11%, 66%);
+  margin: 2% 0 5% 0;
+}
+.clipboard button {
+  padding: 1%;
+  border-radius: 30px;
+}
+.clipboard button:nth-child(1) {
+  margin-right: 2%;
+  box-shadow: 8px 8px 10px rgba(38, 186, 164, 0.75);
+  -webkit-box-shadow: 8px 8px 10px rgba(38, 186, 164, 0.75);
+  -moz-box-shadow: 8px 8px 10px rgba(38, 186, 164, 0.75);
+}
+.clipboard button:nth-child(2) {
+  box-shadow: 8px 8px 10px rgba(0, 123, 255, 0.75);
+  -webkit-box-shadow: 8px 8px 10px rgba(0, 123, 255, 0.75);
+  -moz-box-shadow: 8px 8px 10px rgba(0, 123, 255, 0.75);
+}
+
+/*foot*/
+.foot {
+  background-color: #eee;
+  padding: 3%;
+}
+.foot .FooterLogo {
+  width: 40%;
+  margin: 5%;
+}
+.foot ul {
+  margin: 5%;
+}
+.foot .LogoIcon {
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+.foot .info {
+  margin-top: 3%;
+}
+.foot .info h6 {
+  color: hsl(210, 10%, 33%);
+}
+.foot .info i {
+  color: red;
+}
+.foot .info a {
+  color: #26BBA4;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .foot .FooterLogo {
+    width: 20%;
+  }
+}/*# sourceMappingURL=style.css.map */

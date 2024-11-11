@@ -1,0 +1,165 @@
+/*Primary colors*/
+$StrongCyan : #26BBA4;
+$LightBlue: hsl(233, 100%, 69%);
+/*Neutral colors*/
+$DarkGrayishBlue: hsl(210, 10%, 33%);
+/*main font*/
+$GrayishBlue: hsl(201, 11%, 66%);
+/*main font*/
+$MainFont : 'Roboto', sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $MainFont;
+    box-sizing: border-box;
+}
+
+@mixin BoxShadow ($HrShadow,$VrShadow,$Blur,$rgba) {
+    box-shadow: $HrShadow $VrShadow $Blur $rgba;
+    -webkit-box-shadow: $HrShadow $VrShadow $Blur $rgba;
+    -moz-box-shadow: $HrShadow $VrShadow $Blur $rgba;
+}
+/*header*/
+.header {
+    background-image: url(../../images/bg-header-desktop.png);
+    margin-bottom: 4%;
+    .logo {
+        margin: 3% 0;
+    }
+    h1 {
+        color: $DarkGrayishBlue;
+    }
+    p {
+        color: $GrayishBlue;
+    }
+    button {
+        padding: 1%;
+        border-radius: 30px;
+    }
+    button:nth-child(1) {
+        margin-right: 2%;
+        @include BoxShadow(8px, 8px, 10px, rgba(38,186,164,0.75));
+    }
+    button:nth-child(2) {
+        @include BoxShadow(8px, 8px, 10px, rgba(0,123,255,0.75));
+    }
+}
+/*track*/
+.track {
+    h2 {
+        color: $DarkGrayishBlue;
+    }
+    p {
+        color: $GrayishBlue;
+    }
+}
+/*mainContent*/
+.mainContent {
+    margin: 5%;
+    img {
+        margin-bottom: 10%;
+    }
+    h5 {
+        color: $DarkGrayishBlue;
+    }
+    p {
+        color: $GrayishBlue;
+        margin-bottom: 5%;
+    }
+}
+@media screen and (max-width : 991px) {
+    .mainContent h5 , .mainContent p {
+        text-align: center;
+    }
+}
+/*access*/
+.access {
+    margin-bottom: 5%;
+    h2 {
+        color: $DarkGrayishBlue;
+        margin: 5% 0 0 0;
+    }
+    p {
+        color: $GrayishBlue;
+        margin: 2% 0 5% 0;
+    }
+    img {
+        @include BoxShadow(5px, 5px, 20px,rgba(76,84,93,0.75) );
+    }
+}
+/*workFlow*/
+.workFlow {
+    margin-bottom: 5%;
+    h2 {
+        color: $DarkGrayishBlue;
+    }
+    p {
+        color: $GrayishBlue;
+        margin: 2% 0 5% 0;
+    }
+    img {
+    margin-bottom: 3%;
+    }
+}
+/*sponsor*/
+.sponsor {
+    margin: 3% 0 10% 0;
+}
+/*clipboard*/
+.clipboard {
+    margin-bottom: 10%;
+    h4 {
+        color: $DarkGrayishBlue;
+    }
+    p {
+        color: $GrayishBlue;
+        margin: 2% 0 5% 0;
+    }
+    button {
+        padding: 1%;
+        border-radius: 30px;
+    }
+    button:nth-child(1) {
+        margin-right: 2%;
+        @include BoxShadow(8px, 8px, 10px, rgba(38,186,164,0.75));
+    }
+    button:nth-child(2) {
+        @include BoxShadow(8px, 8px, 10px, rgba(0,123,255,0.75));
+    }
+}
+/*foot*/
+.foot {
+    background-color: #eee;
+    padding: 3%;
+    .FooterLogo {
+        width: 40%;
+        margin: 5%;
+    }
+    ul {
+        margin: 5%;
+    }
+    .LogoIcon {
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    .info{
+        margin-top: 3%;
+        h6 {
+            color: $DarkGrayishBlue;
+        }
+        i {
+            color: red;
+        }
+        a {
+            color: $StrongCyan;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+    }
+}
+@media screen and (max-width : 768px) {
+    .foot  .FooterLogo{
+        width: 20%;
+    }
+}
